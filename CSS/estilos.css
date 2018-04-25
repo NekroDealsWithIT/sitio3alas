@@ -1,0 +1,126 @@
+/* estilos.css */
+#MUGRE_ejemplo_de_pie{
+	display:none;
+}
+.MUGRE{
+	color:#FF0000;
+	background-color:#FFFFFF;
+}
+
+/* aca empieza la magia */
+
+/* variables */
+/* custom properties */
+/* :root es la raiz de todo el sistema */
+/* las variables de CSS se crean en la raiz del documento */
+:root{
+	--negro:#29272a;
+	--naranja:#f69c21;
+	--amarillopatito:yellow;
+	
+	--negroposta:#000000;
+	--blancoposta:#FFFFFF;
+	
+	--testing:red;
+}
+
+/* fin variables */
+/* ------------------------------------- */
+/* con esto limpio los estilos */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color:var(--negro);
+	background-image:url("../images/pattern.jpg"); 
+	/* color:white; */
+	/* https://www.myfonts.com/WhatTheFont/ */
+	font-family: arial;
+}
+.cabecera{
+	/* lo dejo en rojo para probar donde estoy */
+	/* background-color: red; */
+	
+	display:flex;
+	/* me justifica y ordena horizontalmente */
+	justify-content: space-between;
+	
+	/* centrar verticalmente */
+	align-items:center;
+	
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	margin-top:16px;
+	margin-bottom:24px;
+}
+
+.cabecera h1{
+	color:var(--naranja);
+}
+
+.contenedor{
+	background-color:var(--blancoposta);
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+/* -------------------------------- */
+/* seccion botonera OJO ver ejemplos con flexbox y float */
+/* -------------------------------- */
+
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+/* agregar especifidad */
+/* .botonera.botonera */
+.botonera{
+	background-color: var(--naranja);
+	/* background-color: var(--testing); */
+	display:block;
+	/* agregamos para limitar la linea */
+	padding-bottom:8px;
+	padding-top:8px;
+}
+
+.botonera ul{
+	/* margin:10px 5px; */
+	margin-left:32px;
+	display: flex;
+	justify-content: space-between;
+	/* margin-left:auto; */
+	/* margin-right:auto; */
+	list-style-type: none;
+}
+
+.botonera li:last-child{
+	/* background-color:red; */
+	border-right:none;
+}
+.botonera li{
+	text-align:center;
+	flex-grow:1;
+	border-right: 1px solid var(--amarillopatito);	
+
+	padding-top:10px; 
+	padding-bottom:10px; 
+}
+
+.botonera a{
+	color:var(--blancoposta);
+    text-decoration: none;
+	padding:8px 3px;
+
+}
+
+.botonera a:hover{
+	color:var(--negro);
+	background-color:var(--testing);
+}
+

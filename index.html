@@ -7,8 +7,22 @@
 		<meta charset="utf-8">
 		<title>3 alas</title>
 		<link href="CSS/estilos.css" rel="stylesheet">
+		<script>
+			function copiame(){
+				var text = "Example text to appear on clipboard";
+				navigator.clipboard.writeText(text).then(function() {
+				  console.log('Async: Copying to clipboard was successful!');
+				}, function(err) {
+				  console.error('Async: Could not copy text: ', err);
+				});		
+			}
+		</script>
 	</head>
 	<body>
+		<div class="MUGRE">
+			<a href="https://validator.w3.org/nu/#textarea" target="_blank">VALIDAME!</a>
+			debajo de esta linea empieza la magia V<hr>
+		</div>
 		<div class="cabecera">
 			<a href="index.html">
 				<img src="images/logo_3alas.png" alt="Ir a home">
@@ -78,10 +92,54 @@
 			</div><!-- Cierra productos -->
 			
 			<div class="newsletter">
+				<div id="imagenNewsletter"><img src="images/sobre.png" alt=""></div>
+				<div id="textoNewsletter">
+					<h3>Suscribite al newsletter</h3>
+					<p>todas las novedades en tu casilla de correo</p>
+				</div>
+				<div id="textoNewsletter2">
+					<form class="newsletter-form" action="suscribite.php">
+						<input type="email">
+						<input type="submit" value="Suscribite">
+					</form>
+				</div>
 			</div><!-- Cierra newsletter -->
+			<div id="MUGRE_ejemplo_de_pie">
+				<h4>Ejemplo de como deberia de quedar el pie</h4>
+				<!-- varias maneras de encarar el pie -->
+				<!-- copy/china/arg/creditos -->
+				<!-- o la mas facil para editar despues es de este estilo: -->
+				<table border=1>
+					<th colspan=3>no hacer esto... es un asco solo copiar el estilo de representacion</th>
+					<tr>
+						<td>Copy</td>
+						<td>China</td>
+						<td>Argentina</td>
+					</tr>
+					<tr>
+						<td colspan="3">Creditos</td>
+					</tr>
+				</table>
+			</div><!-- Cierra ejemplo de pie -->
 			<div class="pie">
+				<div class="pie-copy">		
+					<h4>&copy; 2018 3alas</h4>	
+					<p>Todos los derechos e izquierdos reservados</p>
+				</div>
+				<p class="pie-china">	
+					Hong Kong<br>
+					Hong Kong<br>
+					Hong Kong<br>
+				<p>
+				<p class="pie-arg">
+					Buenos Aires<br>
+					Buenos Aires<br>
+					Buenos Aires<br>
+				</p>
+				<div class="pie-creditos">
+					Diseñado por <a href="*">Mauricio Niemand</a>
+				</div>
 			</div><!-- Cierra pie -->
-			
 		</div><!--Cierra .contenedor -->
 		<!-- no deberias de estar tipeando aca -->
 	</body>
