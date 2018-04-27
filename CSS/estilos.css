@@ -1,3 +1,5 @@
+/* editado desde firefox editor de estilo */
+
 /* estilos.css */
 #MUGRE_ejemplo_de_pie{
 	display:none;
@@ -17,6 +19,7 @@
 	--negro:#29272a;
 	--naranja:#f69c21;
 	--amarillopatito:yellow;
+	--grisClarito:#AAA;
 	
 	--negroposta:#000000;
 	--blancoposta:#FFFFFF;
@@ -40,6 +43,12 @@ body{
 	/* https://www.myfonts.com/WhatTheFont/ */
 	font-family: arial;
 }
+
+h2{
+	font-size: 20px;
+	margin-bottom:16px;
+}
+
 .cabecera{
 	/* lo dejo en rojo para probar donde estoy */
 	/* background-color: red; */
@@ -68,6 +77,9 @@ body{
 	max-width:1000px;
 	margin-left:auto;
 	margin-right:auto;
+	
+	/* agregamos los bordes redondeados */
+	border-radius:10px 10px 0 0;
 }
 
 /* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
@@ -87,6 +99,12 @@ body{
 	/* agregamos para limitar la linea */
 	padding-bottom:8px;
 	padding-top:8px;
+	
+	/* agregamos los bordes redondeados */
+	border-radius:10px 10px 0 0;
+	
+	/* para hacer un circulo con 50% de altura y width */
+	/* border-radius:50%; */
 }
 
 .botonera ul{
@@ -122,5 +140,173 @@ body{
 .botonera a:hover{
 	color:var(--negro);
 	background-color:var(--testing);
+	background-color: hotpink;
 }
 
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+/* -------------------------------- */
+/* seccion slider */
+/* -------------------------------- */
+
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+.slider{
+	/* ojo, solo funciona por que hay una imagen nada mas */
+	text-align:center;
+	/* elegir top o bottom para que el proximo elemento no quede pegado si no hay slider */
+	/* en este caso elijo el top para todos los elementos */
+	margin:30px 30px 0 30px;
+}
+
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+/* -------------------------------- */
+/* seccion categorias */
+/* -------------------------------- */
+
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+.categorias{
+	width:20%;
+	float: left;
+	/* background-color:red; */
+	margin-top:50px;
+	/* padding-left: 10px; */
+	/* margin-left:10px; */
+}
+.categorias h2{
+	padding-left:24px;
+}
+.categorias ul{
+	list-style-type: none;
+	/* background-color: green; */
+	margin-left:35px;
+}
+.categorias li{
+	border-bottom: 1px dashed var(--grisClarito);
+}
+.categorias a{
+	/* usar siempre block para que no lo tome en linea */
+	display:block;
+	text-decoration:none;
+	padding:6px 0;
+	/* background-color:pink; */
+	color:var(--negroposta);
+}
+
+.categorias a:hover{
+	font-weight:600;
+}
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+/* -------------------------------- */
+/* seccion productos */
+/* -------------------------------- */
+
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+.productos{
+	width:80%;
+	float: right;
+	/* background-color:skyblue; */
+	margin-top:50px;
+	padding-right:56px;
+}
+
+.lampara{
+	padding-left:26px;
+	padding-bottom:26px;
+	/* background-color:var(--testing); */
+	float:left;
+	width:50%;
+	/* height:80px; */
+}
+
+.lampara .imagen{
+	float:left;
+	width:50%;
+}
+
+.lampara .descripcion{
+	float:right;
+	width:50%;
+}
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+/* -------------------------------- */
+/* seccion newsletter */
+/* -------------------------------- */
+
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+.newsletter{
+	/* limpiar float e izquierda y derecha */
+	clear:both;
+	
+	max-width:940px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	/*margin-top:50px;*/
+	
+	border:1px solid var(--grisClarito);
+	
+	/* degradado (son imagenes no colores de fondo) */
+	/* background-image:  linear-gradient(red, blue); */
+	background-image:  	linear-gradient(		
+							var(--blancoposta), 
+							var(--grisClarito)
+						);
+	
+	display:flex;
+	/* centrado horizontalmente */
+	justify-content: space-around;
+	justify-content: space-between;
+	/* centrado vertical */
+	align-items: center;
+	
+	/* redondeados */
+	border-radius:5px;
+}
+
+.newsletter div{
+	padding: 12px 10px;
+}
+
+.imagenNewsletter{
+	
+}
+.textoNewsletter{
+	margin-left:40px;
+}
+.textoNewsletter p{
+	margin-left:40px;
+}
+.formNewsletter{
+	/* lo transformo en flex tambien */
+	display:flex;
+	/* hace que se agrande a todo el espacio que queda */
+	flex-grow:1; 
+	justify-content:flex-end;
+}
+
+/* con [] puedo seleccionar por atributo */
+.formNewsletter [type="submit"]{
+	/* background:red; */
+	
+	/* eliminar estilos predeterminados de los botones */
+	/* el background destruye el puntero de la mano */
+	background:none;
+	border:none;
+	
+	padding: 5px 8px;
+	font-weight: bold;
+	
+	/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor */
+	cursor:pointer;
+}
+.formNewsletter [type="submit"]:hover{
+	background-color:blue;
+	color:white;
+	border-radius:50%;
+}

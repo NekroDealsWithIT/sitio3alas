@@ -74,21 +74,27 @@ body{
 
 .botonera{
 	background-color: var(--naranja);
-	/* background-color: var(--testing); */
-	display:block;
+	/* background-color: var(--testing) */
+	/* display:block; */
 	/* agregamos para limitar la linea */
-	padding-bottom:8px;
-	padding-top:8px;
+	/* padding-bottom:8px; */
+	/* padding-top:8px; */
+	
+	/* Flexbox siempre se aplica al elemento padre, no a los hijos */
+	display: flex;
+
+	list-style-type: none;
+	max-width: 1000px;
 }
 
 .botonera ul{
-	/* margin:10px 5px; */
-	margin-left:32px;
-	display: flex;
-	justify-content: space-between;
-	/* margin-left:auto; */
-	/* margin-right:auto; */
-	list-style-type: none;
+	/* /* margin:10px 5px; */ */
+	/* margin-left:32px; */
+	/* display: flex; */
+	/* justify-content: space-between; */
+	/* /* margin-left:auto; */ */
+	/* /* margin-right:auto; */ */
+	/* list-style-type: none; */
 }
 
 .botonera li:last-child{
@@ -96,21 +102,32 @@ body{
 	border-right:none;
 }
 .botonera li{
-	text-align:center;
-	flex-grow:1;
-	border-right: 1px solid var(--amarillopatito);	
+	/* text-align:center; */
+	/* flex-grow:1; */
+	/* border-right: 1px solid var(--amarillopatito);	 */
 
-	padding-top:10px; 
-	padding-bottom:10px; 
+	/* padding-top:10px;  */
+	/* padding-bottom:10px;  */
+	
+	/* Cada elemento hijo de flex ocupa lo que sea necesario para cubrir el 100% disponible */
+	flex-grow: 1;
 }
 
 .botonera a{
-	color:var(--blancoposta);
-    text-decoration: none;
-
+	/* color:var(--blancoposta); */
+    /* text-decoration: none; */
+	
+	background-color: gold;
+	display: block;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 .botonera a:hover{
 	color:var(--negro);
-	background-color:var(--testing);
+	/* background-color:var(--testing); */
+	
+	background-color: hotpink;
 }
