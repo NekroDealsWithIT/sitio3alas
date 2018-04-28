@@ -20,6 +20,7 @@
 	--naranja:#f69c21;
 	--amarillopatito:yellow;
 	--grisClarito:#AAA;
+	--grisTopo:#F0F0F0;
 	
 	--negroposta:#000000;
 	--blancoposta:#FFFFFF;
@@ -141,6 +142,14 @@ h2{
 	color:var(--negro);
 	background-color:var(--testing);
 	background-color: hotpink;
+}
+
+.botonera-lista_formulario{
+	margin-left:156px;
+}
+.botonera-lista_formulario input{
+	/* retomo un poco de relleno en los elemnetos del formulario. padding que perdieron con el selector * */
+	padding:2px 4px;
 }
 
 /* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
@@ -309,4 +318,52 @@ h2{
 	background-color:blue;
 	color:white;
 	border-radius:50%;
+}
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+
+/* -------------------------------- */
+/* seccion pie */
+/* -------------------------------- */
+
+/* *·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*·*/
+.pie{
+	/* heredables */
+	font-size:14px;
+	color: var(--negro);
+
+	background-color: var(--grisClarito);
+	padding:6px 50px;
+	border-top: 1px solid var(--grisTopo);
+	margin-top:30px;
+}
+
+/* con esto selecciono varias clases a la vez */
+.pie-copy, .pie-china, .pie-arg{
+	float:left;
+}
+.pie-china, .pie-arg{
+	padding: 15px 20px;
+	/* padding-right:20px; */
+	
+}
+.pie-china{
+	border-right:1px solid var(--negroposta);
+	padding-left:20px;
+	padding-right: 15px;
+}
+.pie-copy h4{
+	font-weight:normal;
+}
+.pie-creditos{
+	clear:both;
+	text-align: right;
+	
+}
+.pie-creditos a{
+	/*
+	paso dos:
+	aplicar la fuente de google
+	*/
+	font-family: 'Indie Flower', cursive;
+	font-size:20px
 }
